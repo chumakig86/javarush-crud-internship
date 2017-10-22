@@ -1,0 +1,6 @@
+ua\chumak\javarush\service\BookServiceImpl.class
+ua\chumak\javarush\controller\BookController.class
+ua\chumak\javarush\dao\BookDao.class
+ua\chumak\javarush\service\BookService.class
+ua\chumak\javarush\dao\BookDaoImpl.class
+ua\chumak\javarush\model\Book.class
