@@ -227,8 +227,7 @@
                                                             </form:label>
                                                         </td>
                                                         <td>
-
-                                                            <form:input path="title"/>
+                                                            <form:input required="required" path="title"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -255,7 +254,7 @@
                                                         </c:if>
                                                         <c:if test="${empty book.title}">
                                                             <td>
-                                                                <form:input path="author"/>
+                                                                <form:input required="required" path="author"/>
                                                             </td>
                                                         </c:if>
                                                     </tr>
@@ -266,7 +265,7 @@
                                                             </form:label>
                                                         </td>
                                                         <td>
-                                                            <form:input path="isbn"/>
+                                                            <form:input required="required" path="isbn"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -346,7 +345,7 @@
                                 <c:forEach items="${listBooks}" var="book">
                                     <tr>
                                         <td>${book.id}</td>
-                                        <td><a href="/bookdata/${book.id}">${book.title}</a></td>
+                                        <td>${book.title}</td>
                                         <td>${book.description}</td>
                                         <td>${book.author}</td>
                                         <td>${book.isbn}</td>
