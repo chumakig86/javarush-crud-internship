@@ -6,3 +6,5 @@ Run linuxrun.sh (linux) or windowsrun.bat (windows) script to run application. O
 Run FillTable.sql to fill sql data base with initial data.
 
 Used technologies: Maven, Tomcat, Spring, Hibernate, MySQL
+
+### <a href="http://ec2-54-229-189-214.eu-west-1.compute.amazonaws.com:8080/crud-1.0-SNAPSHOT/" target=_blank>Демо разрабатываемого приложения</a>
