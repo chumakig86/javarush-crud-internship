@@ -1,6 +1,8 @@
 package ua.chumak.javarush.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @Entity
 @Table(name = "book")
@@ -11,18 +13,26 @@ public class Book {
     private int id;
 
     @Column(name = "title")
+    @NotNull
+    @Pattern(regexp = "([a-zа-яA-ZА-Я0-9 $]|[\\-_+#])+")
     private String title;
 
     @Column(name = "description")
+    @Pattern(regexp ="^$||([a-zа-яA-ZА-Я0-9 $]|[\\-_+#])+")
     private String description;
 
     @Column(name = "author")
+    @NotNull
+    @Pattern(regexp = "([a-zа-яA-ZА-Я0-9 $]|[\\-_+#])+")
     private String author;
 
     @Column(name = "isbn")
+    @NotNull
+    @Pattern(regexp = "([0-9]|[\\-+#])+")
     private String isbn;
 
     @Column(name = "printYear")
+    @NotNull
     private int printYear;
 
     @Column(name = "readAlready")
