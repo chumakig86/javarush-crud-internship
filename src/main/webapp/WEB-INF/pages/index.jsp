@@ -357,14 +357,15 @@
                                         </c:if>
                                         <c:if test="${book.readAlready}">
                                             <td class="form" align="center">
-                                                <img src="../../resources/checkcircle.png">
+                                                <img src="<c:url value="/resources/checkcircle.png"/>"/>
                                             </td>
                                         </c:if>
                                         </td>
-                                        <td><a href="<c:url value='/edit/${book.id}'/>"><img src="../../resources/pencilcircle.png"></a>
-                                            <a href="<c:url value='/remove/${book.id}'/>"> <img src="../../resources/closecircle2.png"></a>
+                                        <td><a href="<c:url value='/edit/${book.id}'/>"><img src="<c:url value="/resources/pencilcircle.png"/>"/></a>
+                                            <a href="<c:url value='/remove/${book.id}'/>"> <img src="<c:url value="/resources/closecircle2.png"/>"/></a>
                                             <c:if test="${!book.readAlready}">
-                                            <a href="<c:url value='/readbook/${book.id}'/>"><img src="../../resources/book.png"></a></td>
+                                            <a href="<c:url value='/readbook/${book.id}'/>"><img src="<c:url value="/resources/book.png"/>"/>
+                                                </a></td>
                                         </c:if>
                                     </tr>
                                 </c:forEach>
