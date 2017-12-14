@@ -302,7 +302,7 @@
                         <table class="form" width="100%">
                             <tr>
                                 <td class="form">
-                                    <form action="/">
+                                    <form action="<c:url value="/"/>">
                                         <input class="field" type="text" placeholder="Min 3 symbols of Title" name="bookName" />
                                         <input class="btn" type="submit" value="Search" />
                                     </form>
