@@ -7,4 +7,4 @@ Run FillTable.sql to fill sql data base with initial data.
 
 Used technologies: Maven, Tomcat, Spring, Hibernate, MySQL
 
-### <a href="http://34.242.79.186:8080/crud-1.0-SNAPSHOT/" target=_blank>Application demo</a>
+### <a href="http://34.242.250.109:8080/crud-1.0-SNAPSHOT/" target=_blank>Application demo</a>
